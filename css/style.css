@@ -1,0 +1,131 @@
+/*______universals______*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.purp-background {
+    background-color: #7e3993;
+}
+
+.blue-background {
+    background-color: #271B2C;
+}
+
+.darkpurp-background {
+     background-color: #32163a;
+}
+.text-white {
+     color: white;
+}
+.pull-left{
+    float: left;
+}
+.pull-right{
+    float: right;
+}
+
+.half{
+    width: 50%;
+}
+.inline-block {
+    display: inline-block
+}
+.clear{
+    clear:both;
+}
+
+.button{
+        
+}
+/*______header______*/
+header>ul>li>a{
+    text-decoration: none;
+    color: inherit;
+    
+}
+header {
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    /*padding: 15px 20px;*/
+    left: 0px;
+    top: 0px;
+    z-index:1;
+}
+
+span h4 {
+    float: left;
+    margin-top: 0;
+    padding: 10px;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+}
+
+header>ul>li {
+    margin: 15px;
+}
+/*______HERO______*/
+#hero{
+    width: 100%;
+    height: 350px;
+    background: url("../img/spacenasa.jpg");
+    background-size: cover;
+    position: relative;
+    top: 59px;
+ /*background-position: center;*/
+}
+
+#hero>h1 {
+    margin:0;
+    
+}
+/*______ASIDE______*/
+aside{
+    width: 25%;
+}
+
+#blog-links{
+     
+}
+
+.blog-link{
+    
+}
+/*______main______*/
+main {
+    width: 75%;
+}
+main, aside{
+    height: 529px;   
+}
+
+/*______footer______*/
+footer{
+    background-color: #F7EBFF ;
+    height: 30px;
+    width: 100%;
+    position: relative;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+#socialm-wrapper{
+    text-align: right;
+    
+}
+
+.fa{
+    color: #585659;
+}
+
+footer>p{
+    color: #585659;
+    padding: 1px 1px 10px 1px;
+    
+}
