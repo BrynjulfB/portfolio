@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contact</title>
+        <link rel="stylesheet" href="css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/contact.css"/>
+    </head>
+    <body>
+        <header class="darkpurp-background text-white font-rale">
+            <a class="inline-block" href="index.html" title="Home"><img src="img/logo.png" class="circle-border"></a>
+            <ul class="pull-right">
+                <li class="nav-links inline-block button"><a href="gallery.html">Gallery</a></li>
+                <li class="nav-links inline-block button"><a href="about.html">About</a></li>
+                <li class="nav-links inline-block button"><a href="contact.html">Contact</a></li>
+            </ul>
+        </header>
+    <main>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+        <div id="form-wrapper" class="pull-left inline-block font-lora">
+            <h1> Have any Questions? Fill out the form.</h1>
+            <form id="input-form" action="" method="POST" target="no_target">
+                <p>Name:</p>
+                <input id=input-q1 type="text" name="name"/>
+                <p>Email:</p>
+                <input id=input-q2 type="email" name="email"/>
+                <p>Question:</p>
+                <textarea id=input-q3 name="question" cols="40" rows="5"></textarea>
+                <!--<input id=input-q3 type="text" name="question"/>-->
+                <input type="submit" value="Submit" class="font-lora"/>
+            </form>
+        </div>
+        <div id="text-wrapper" class="pull-right font-lora">
+            <h1>Or reach me directly at:</h1>
+            <p1>Email:</p1>
+            <p id="skip-line">Erik.J.Ingels@gmail.com</p>
+            <p1>Text or Call:</p1>
+            <p>559-360-7145</p>
+        </div>
+        <iframe src="#" id="no-target" name="no-target" style="visibility:hidden"></iframe>    
+        <!--Script for Form-->
+        <script type="text/javascript">
+            /*global $*/
+            $('#input-form').one('submit',function(){
+            var inputq1 = encodeURIComponent($('#input-q1').val());
+            var inputq2 = encodeURIComponent($('#input-q2').val());
+            var inputq3 = encodeURIComponent($('#input-q3').val());
+            var q1ID = "entry.76304085";
+            var q2ID = "entry.251719369";
+            var q3ID = "entry.623814882";
+    
+            var baseURL = 'https://docs.google.com/forms/d/e/1FAIpQLSeDYUM9XwW02zvDWr7D7k64gy80VdvAC7fU1huKPzhXpyM2UA/formResponse?';
+            var submitRef = '&submit=SUBMIT';
+            var submitURL = (baseURL + q1ID + "=" + inputq1 + "&" + q2ID + "=" + inputq2 + "&" + q3ID + "=" + inputq3 + submitRef);
+            console.log(submitURL);
+            $(this)[0].action=submitURL;
+        
+        });
+        </script>
+    </main>
+    <footer class="clear">
+            <p class="inline pull-left">&copyErik Ingels 2017</p>
+            <!--social media-->
+            <div id="socialm-wrapper">
+                <a href="http://facebook.com" target="_blank">
+                    <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i></a>
+                <a href="http://instagram.com" target="_blank">
+                    <i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                <a href="http://twitter.com" target="_blank">
+                    <i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+                
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,17 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Open+Sans:700|Raleway');
 /*______universals______*/
 body {
     margin: 0;
     padding: 0;
-}
-
-.purp-background {
-    background-color: #7e3993;
+    height: 100%;
 }
 
 .blue-background {
     background-color: #271B2C;
 }
-
 .darkpurp-background {
      background-color: #32163a;
 }
@@ -28,17 +25,45 @@ body {
 .half{
     width: 50%;
 }
+.inline{
+    display: inline;
+}
 .inline-block {
     display: inline-block
 }
 .clear{
     clear:both;
 }
-
-.button{
-        
+.button:hover{
+    background-color: #7e3993; 
+}
+.circle-border{
+    border-radius: 50%;
+}
+.font-rale{
+    font-family: 'Raleway', sans-serif;
+}
+.font-lora{
+    font-family: 'Lora', serif;
+}
+.font-open{
+    font-family: 'Open Sans', sans-serif;
+}
+button{
+    background-color: #32163a;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 /*______header______*/
+.nav-links{
+    padding: 15px 15px 26px 15px;
+}
+
 header>ul>li>a{
     text-decoration: none;
     color: inherit;
@@ -47,37 +72,31 @@ header>ul>li>a{
 header {
     height: 60px;
     width: 100%;
-    position: fixed;
+    /*position: fixed;*/
     /*padding: 15px 20px;*/
     left: 0px;
     top: 0px;
     z-index:1;
+    /*background-color: rgba(50, 22, 58,.095);*/
+}
+header>a>img{
+    width:60px;
 }
 
-span h4 {
-    float: left;
-    margin-top: 0;
-    padding: 10px;
-
-}
 
 ul {
     list-style-type: none;
     margin: 0;
 }
 
-header>ul>li {
-    margin: 15px;
-}
 /*______HERO______*/
 #hero{
     width: 100%;
-    height: 350px;
-    background: url("../img/spacenasa.jpg");
+    height: 450px;
+    background: url("../img/hero.jpg");
     background-size: cover;
     position: relative;
-    top: 59px;
- /*background-position: center;*/
+    background-position: center;
 }
 
 #hero>h1 {
@@ -88,26 +107,26 @@ header>ul>li {
 aside{
     width: 25%;
 }
-
-#blog-links{
-     
-}
-
-.blog-link{
-    
-}
+#prof-pic{
+    border-radius:50%;
+    margin-top: 4px;
+} 
 /*______main______*/
 main {
     width: 75%;
+    font-size: larger;
 }
 main, aside{
-    height: 529px;   
+    height: 450px;   
+}
+main>p{
+    padding-right: 5px;
 }
 
 /*______footer______*/
 footer{
-    background-color: #F7EBFF ;
-    height: 30px;
+    background-color: #c2c2c2 ;
+    height: 31px;
     width: 100%;
     position: relative;
     bottom:0;
@@ -126,6 +145,6 @@ footer{
 
 footer>p{
     color: #585659;
-    padding: 1px 1px 10px 1px;
-    
+    position: relative;
+    margin:0;
 }

@@ -1,0 +1,14 @@
+/*_____MAIN_____*/
+img{
+    width: 100%; 
+}
+
+main{
+    width: 100%
+}
+
+main>p{
+    font-size: 10px;
+    text-align: center;
+}
+
